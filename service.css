@@ -1,0 +1,319 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.body{
+    overflow: hidden!important;
+ }
+ .whole{
+    min-height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+    background-color: lightgray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+ }
+ .navv{
+    height: 60px;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.right a{
+    position: relative;
+    bottom: -40px;
+    opacity: 0;
+    animation: homenav 1s linear forwards;
+    
+}
+@keyframes homenav {
+    to{
+        bottom: 0px;
+        opacity: 1;
+        transition: 8s;
+    }
+}
+.left a{
+    position: relative;
+    bottom: -40px;
+    opacity: 0;
+    animation: homenav 1s linear forwards;
+    
+}
+
+.left h1{
+    display: none;
+}
+.navv input{
+    display: none;
+}
+  
+.service{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./bgi.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    filter: brightness(90%);
+    background-color: beige;
+}
+
+.containerr{
+    min-height: 1600px;
+    width: 100%;
+    /* padding-top: 200px!important; */
+    padding: 40px!important;
+    
+}
+.roww1{
+    /* height: 500px; */
+    width: 100%;
+    /* padding-top: 100px!important; */
+} 
+.imgg1{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+    overflow: hidden; 
+}
+
+.img1{
+    height: 250px;
+    background-image: url(./service-img2.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.img1:hover{
+    transform: scale(1.05);
+}
+.imgg2{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+}
+@keyframes scroll {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.img2{
+    height: 250px;
+    background-image: url(./service-img3.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.imgg3{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+}
+.img3{
+    height: 250px;
+    background-image: url(./service-img4.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.roww2{
+    /* height: 500px; */
+    width: 100%;
+
+}
+.imgg4{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+    
+}
+.img4{
+    height: 250px;
+    background-image: url(./pedicure6.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.imgg5{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+}
+.img5{
+    height: 250px;
+    background-image: url(./service-img6.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.imgg6{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+}
+.img6{
+    height: 250px;
+    background-image: url(service-img8.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.roww3{
+    /* height: 500px; */
+    width: 100%;
+    
+    
+}
+.imgg7{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+}
+.img7{
+    height: 250px;
+    background-image: url(./pedi2.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.imgg8{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+}
+.img8{
+    height: 250px;
+    background-image: url(./post-4.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.imgg9{
+    /* height: 500px; */
+    animation: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: 0 40%;
+}
+.img9{
+    height: 250px;
+    background-image: url(./pedi4.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.last{
+     height: 300px;
+    width: 100%;
+    background-color: rgba(5, 5, 58, 0.747);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last i{
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+    color: palevioletred;
+    cursor: pointer;
+}
+.last i:hover{
+    background-color: palevioletred;
+    color: white;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:770px) {
+    .right{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .navv{
+        flex-direction: column;
+    }
+    .left h1{
+        display: block;
+    }
+    .left{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .right{
+        width: 120%!important;
+        height: 150px;
+        background-color: teal;
+        padding: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: -200px;
+        top: 50px;
+        opacity: 0;
+        z-index: 999;
+    }
+    .navv input:checked ~.right{
+        opacity: 1;
+        right: 0px;
+        transition: 1s all;
+        top: 0;
+        color: white!important;
+    }
+}

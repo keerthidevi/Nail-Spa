@@ -1,0 +1,221 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.body{
+    overflow: hidden!important;
+ }
+ .whole{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightgray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+ }
+ .navv{
+    height: 60px;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.right a{
+    position: relative;
+    bottom: -40px;
+    opacity: 0;
+    animation: homenav 1s linear forwards;
+    
+}
+@keyframes homenav {
+    to{
+        bottom: 0px;
+        opacity: 1;
+        transition: 8s;
+    }
+}
+.left a{
+    position: relative;
+    bottom: -40px;
+    opacity: 0;
+    animation: homenav 1s linear forwards;
+    
+}
+
+.left h1{
+    display: none;
+}
+.navv input{
+    display: none;
+}
+  
+.about{
+    height: 400px;
+    width: 100%;
+    background-image: url(./bgi.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-attachment: fixed; 
+     filter: brightness(90%);
+     background-color: beige;
+}
+
+.moreab{
+    min-height: 850px;
+    width: 100%;
+    background-color: white;
+    padding-top: 150px!important;
+}
+.leftab{
+    height: 100%;
+    padding-top: 80px!important;
+}
+.leftab>h2{
+    border-bottom: 5px double teal;
+    width: 72%;
+    
+}
+/* .rightimg{
+    height: 100%;
+    
+} */
+
+.rightimg>img{
+    height: 550px;
+    width: 650px;
+}
+
+.offer{
+    min-height: 500px;
+    padding-top: 90px!important;
+}
+
+.topof{
+    /* height: 170px; */
+    
+    
+}
+.bottomof{
+    /* height: 180px; */
+}
+
+.choose{
+    min-height: 750px; 
+    width: 100%;
+    background-color: white;
+    padding-top: 100px!important;
+}
+.concho{
+    height: 180px; 
+    
+}
+.imgcho{
+     height: 550px; 
+    width: 100%;
+    background-image: url(./bgi3.jpeg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    filter: brightness(90%);
+}
+.con{
+    height: 550px;
+}
+
+.last{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(5, 5, 58, 0.747);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last i{
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+    color: palevioletred;
+    cursor: pointer;
+}
+.last i:hover{
+    background-color: palevioletred;
+    color: white;
+}
+.cont button:hover{
+    cursor:pointer;
+    background-color:white;
+    color:grey
+
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:770px) {
+    .right{
+        width: 50%!important;
+    }
+    /* .rightimg{
+        width:150%!important
+    } */
+}
+
+@media only screen and (max-width:450px) {
+    .navv{
+        flex-direction: column;
+    }
+    .left h1{
+        display: block;
+    }
+    .left{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .right{
+        width: 120%!important;
+        height: 150px;
+        background-color: teal;
+        padding: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: -200px;
+        top: 50px;
+        opacity: 0;
+        z-index: 999;
+    }
+    .navv input:checked ~.right{
+        opacity: 1;
+        right: 5px;
+        transition: 1s all;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    
+        .leftab{
+            padding-top: 0px!important;
+        }
+    
+}

@@ -1,0 +1,373 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.body{
+   overflow: hidden!important;
+}
+.whole{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightgray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navv{
+    height: 60px;
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.right a{
+    position: relative;
+    bottom: -40px;
+    opacity: 0;
+    animation: homenav 1s linear forwards;
+    
+}
+@keyframes homenav {
+    to{
+        bottom: 0px;
+        opacity: 1;
+        transition: 8s;
+    }
+}
+.left a{
+    position: relative;
+    bottom: -40px;
+    opacity: 0;
+    animation: homenav 1s linear forwards;
+    
+}
+
+.left h1{
+    display: none;
+}
+
+.navv input{
+    display: none;
+}
+
+.home{
+    height: 606px;
+    width: 100%;
+    background-image: url(./homebg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homecont{
+    padding: 100px;
+}
+.homecont>button{
+    height: 60px!important;
+}
+.homecont button:hover{
+    cursor:pointer;
+    background-color:white;
+    color:grey
+
+}
+.incont button:hover{
+    cursor:pointer;
+    background-color:white;
+    color:grey
+
+}
+.pedicures{
+    min-height: 600px;
+    width: 100%;
+    background-color: white;
+}
+.pediimg{
+    padding: 50px!important;
+}
+.pedi{
+    height: 500px;
+    width: 5%;
+    animation-name: ped;
+    animation-fill-mode: forwards;
+    animation-timeline: view();
+    animation-range: entry;
+    transition: 2s;
+}
+@keyframes ped {
+    to{
+        width: 100%;
+    }
+}
+
+.treat{
+    height: 300px;
+    width: 100%;
+    background-image: url(./mt-1035-content-bg02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+   
+}
+.trimg>h1{
+    animation-name: inside;
+    animation-fill-mode: forwards;
+     position: relative;
+    bottom: -30px; 
+    opacity: 0;
+    animation-timeline:view();
+    animation-range: entry;
+    animation-duration: 4s;
+}
+.trimg>button{
+    animation-name: inside;
+    animation-fill-mode: forwards;
+     position: relative;
+    bottom: -30px; 
+    opacity: 0;
+    animation-timeline:view();
+    animation-range: entry;
+    animation-duration: 4s;
+}
+@keyframes inside {
+    to{
+   opacity: 1;
+   bottom:0 }
+   
+   
+}
+
+.follow{
+    min-height:1000px ;
+    width: 100%;
+    /* background-color: aqua; */
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+
+}
+
+.img1{
+    height: 400px;
+    /* width: 600px; */
+    background-image: url(./image1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+}
+.ic1{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid white;
+    opacity: 0;
+    position: relative;
+    bottom: -200px;
+    
+}
+.img1:hover .ic1{
+    opacity: 1;
+    bottom: 0;
+    transition: all 1s;
+}
+.img2{
+    height: 400px;
+    /* width: 350px; */
+    background-image: url(./image2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.ic2{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid white;
+    opacity: 0;
+    position: relative;
+    bottom: -200px;
+    
+}
+.img2:hover .ic2{
+    opacity: 1;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.img3{
+    height: 400px;
+    /* width: 300px; */
+    background-image: url(./image3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.ic3{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid white;
+    opacity: 0;
+    position: relative;
+    bottom: -200px;
+    text-align: center;
+    
+}
+.img3:hover .ic3{
+    opacity: 1;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.img4{
+    height: 400px;
+    /* width: 500px;  */
+    background-image: url(./image5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+}
+.ic4{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid white;
+    opacity: 0;
+    position: relative;
+    bottom: -200px;
+    
+}
+.img4:hover .ic4{
+    opacity: 1;
+    bottom: 0;
+    transition: all 1s;
+}
+.img5{
+    height: 400px;
+    /* width: 500px; */
+    background-image: url(./image4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ic5{
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px solid white;
+    opacity: 0;
+    position: relative;
+    bottom: -200px;
+    
+}
+.img5:hover .ic5{
+    opacity: 1;
+    bottom: 0;
+    transition: all 1s;
+}
+
+.last{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(5, 5, 58, 0.747);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last i{
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: white;
+    color: palevioletred;
+    cursor: pointer;
+}
+.last i:hover{
+    background-color: palevioletred;
+    color: white;
+}
+
+
+/* MEDIA QURIES */
+ 
+@media only screen and (max-width:992px) {
+    .homecont{
+        padding: 1px;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .right{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .navv{
+        flex-direction: column;
+    }
+    .left h1{
+        display: block;
+    }
+    .left{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .right{
+        width: 120%;
+        height: 150px;
+        background-color: teal;
+        padding: 20px;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: -200px;
+        top: 50px;
+        z-index:999;
+        opacity: 0;
+    }
+    .navv input:checked ~.right{
+        opacity: 1;
+        right: 5px;
+        transition: 1s all;
+        top: 0;
+    }
+}
